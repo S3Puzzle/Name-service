@@ -13,14 +13,13 @@ public class UserLoginService {
     public void addUserLogin(UserLogin n){
         userLoginRepository.save(n);
     }
-    public UserLogin getNameByEmail(String email){
+    public String getNameByEmail(String email){
         Iterable<UserLogin> userLogins = userLoginRepository.findAll();
         for (UserLogin p:userLogins) {
             if(p.getEmail().equals(email)){
-                return p;
+                return p.getName();
             }
         }
-        UserLogin empty = new UserLogin();
-        return empty;
+        return "";
     }
 }
