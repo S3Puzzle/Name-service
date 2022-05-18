@@ -41,7 +41,7 @@ public class IntegrationTests {
                         .param("email", "cas.esselink@gmail.com")
                         .accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$.name").value("Cas"));
+                .andExpect(content().string("Cas"));
     }
     @Test
     void shouldAddUserLogin() throws Exception {
