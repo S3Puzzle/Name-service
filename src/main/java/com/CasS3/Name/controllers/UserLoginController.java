@@ -19,14 +19,13 @@ public class UserLoginController {
     private UserLoginService userLoginService;
 
     @PostMapping(path="/add") // Map ONLY POST Requests
-    public @ResponseBody
-    UserLogin addNewUserLogin (@RequestBody UserLogin n) {
+    public @ResponseBody UserLogin addNewUserLogin (@RequestBody UserLogin n) {
         userLoginService.addUserLogin(n);
         return n;
     }
 
     @GetMapping(path="/get")
-    public @ResponseBody UserLogin getName(@RequestParam String email) {
+    public @ResponseBody String getName(@RequestParam String email) {
         return userLoginService.getNameByEmail(email);
     }
 }
