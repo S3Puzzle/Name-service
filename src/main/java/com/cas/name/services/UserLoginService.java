@@ -1,7 +1,7 @@
-package com.CasS3.Name.services;
+package com.cas.name.services;
 
-import com.CasS3.Name.entities.UserLogin;
-import com.CasS3.Name.repository.UserLoginRepository;
+import com.cas.name.entities.UserLogin;
+import com.cas.name.repository.UserLoginRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,4 +1,4 @@
-package com.CasS3.Name;
+package com.cas.name;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

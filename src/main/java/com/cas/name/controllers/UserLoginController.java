@@ -1,7 +1,8 @@
-package com.CasS3.Name.controllers;
+package com.cas.name.controllers;
 
-import com.CasS3.Name.entities.UserLogin;
-import com.CasS3.Name.services.UserLoginService;
+import com.cas.name.entities.UserLogin;
+import com.cas.name.entities.Form;
+import com.cas.name.services.UserLoginService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -15,9 +16,12 @@ public class UserLoginController {
 
     @CrossOrigin(origins = "http://localhost:8080/")
     @PostMapping(path="/add") // Map ONLY POST Requests
-    public @ResponseBody UserLogin addNewUserLogin (@RequestBody UserLogin n) {
-        userLoginService.addUserLogin(n);
-        return n;
+    public @ResponseBody UserLogin addNewUserLogin (@RequestBody Form n) {
+        UserLogin userLogin = new UserLogin();
+        userLogin.setEmail(n.getEmail());
+        userLogin.setName(n.getName());
+        userLoginService.addUserLogin(userLogin);
+        return userLogin;
     }
     @CrossOrigin(origins = "http://localhost:8080/")
     @GetMapping(path="/get")

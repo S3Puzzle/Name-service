@@ -1,8 +1,8 @@
-package com.CasS3.Name.repository;
+package com.cas.name.repository;
 
 
 import org.springframework.data.repository.CrudRepository;
-import com.CasS3.Name.entities.UserLogin;
+import com.cas.name.entities.UserLogin;
 
 // This will be AUTO IMPLEMENTED by Spring into a Bean called userRepository
 // CRUD refers Create, Read, Update, Delete

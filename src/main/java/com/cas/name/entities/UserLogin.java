@@ -1,4 +1,4 @@
-package com.CasS3.Name.entities;
+package com.cas.name.entities;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
