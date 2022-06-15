@@ -1,6 +1,7 @@
 package com.cas.name;
 
 import com.cas.name.controllers.UserLoginController;
+import com.cas.name.entities.Form;
 import com.cas.name.entities.UserLogin;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +18,7 @@ class UnitTests {
     @Test
     void shouldGetName(){
         //arrange
-        UserLogin userLogin = new UserLogin();
+        Form userLogin = new Form();
         userLogin.setName("Cas");
         userLogin.setEmail("cas.esselink@gmail.com");
         userLoginController.addNewUserLogin(userLogin);
@@ -29,7 +30,7 @@ class UnitTests {
     @Test
     void shouldAddLoginUser(){
         //arrange
-        UserLogin userLogin = new UserLogin();
+        Form userLogin = new Form();
         userLogin.setName("Cas");
         userLogin.setEmail("cas.esselink@gmail.com");
         //act
