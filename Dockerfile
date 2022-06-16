@@ -1,4 +1,4 @@
 FROM openjdk:8
 EXPOSE 8083
-ADD target/s3puzzle.jar s3puzzle.jar
-ENTRYPOINT ["java","-jar","/s3puzzle.jar"]
+ADD target/name.jar name.jar
+ENTRYPOINT ["java","-jar","/name.jar"]
