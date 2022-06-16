@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.CasS3</groupId>
-	<artifactId>Name</artifactId>
+	<artifactId>name</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Name</name>
+	<name>name</name>
 	<description>Naam aan email koppelen</description>
 	<properties>
 		<java.version>11</java.version>
@@ -37,7 +37,7 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-
+	<packaging>jar</packaging>
 	<build>
 		<plugins>
 			<plugin>
