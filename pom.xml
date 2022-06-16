@@ -13,10 +13,6 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Name</name>
 	<description>Naam aan email koppelen</description>
-	<scm>
-		<developerConnection>scm:git:https://github.com/CasEsselink/${project.artifactId}</developerConnection>
-		<tag>HEAD</tag>
-	</scm>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
