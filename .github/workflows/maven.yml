@@ -48,4 +48,4 @@ jobs:
       uses: docker/build-push-action@v3
       with:
         push: true
-        tags: casesselink/s3puzzle/name:latest
+        tags: casesselink/s3puzzle/nameservice:latest
