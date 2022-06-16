@@ -1,4 +1,4 @@
-FROM openjdk:8-jdk-alpine
-ARG JAR_FILE=target/*.jar
-COPY ${JAR_FILE} app.jar
-ENTRYPOINT ["java","-jar","/app.jar"]
+FROM openjdk:8
+EXPOSE 8083
+ADD target/s3puzzle.jar s3puzzle.jar
+ENTRYPOINT ["java","-jar","/s3puzzle.jar"]
