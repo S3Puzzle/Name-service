@@ -12,7 +12,7 @@ on:
 jobs:
   build:
     env:
-      DB_DATABASE: test
+      DB_DATABASE: emailnames
       DB_USER: root
       DB_PASSWORD: root
     runs-on: ubuntu-latest
@@ -47,4 +47,4 @@ jobs:
       uses: docker/build-push-action@v3
       with:
         push: true
-        tags: casesselink/s3name:latest
+        tags: casesselink/s3puzzle/name:latest
